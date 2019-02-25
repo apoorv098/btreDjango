@@ -1,0 +1,47 @@
+MODEL/DB FIELDS
+
+# LISTING
+
+  1. Id: INT
+  2. realtor INT(FOREIGN KEY [realtor])
+  3. Title: String
+  4. address: String
+  5. City : String
+  6. State: String
+  7. Zipcode: String
+  8. Description: TEXT
+  9. Price: INT
+  10. bedrooms: INT
+  11: Bathrooms : int
+  12: garage: int [0]
+  13: list_date: date
+  14. sqft: int
+  15. lot_size: float
+  16. Photo_main: String
+  17. photo_1: String
+  18. photo2,3,4,5,6
+  19. is_published: boolean [true]
+
+
+# REALTOR
+
+  1. id: INT
+  2. name: String
+  3. photo: string
+  4. description: text
+  5. email: string
+  6. phone: string
+  7. is_mvp: Boolean [0]
+  8. hire_date: date
+
+# CONTACT
+
+  1. id: int
+  2. user_id: int
+  3. listing: int
+  4. listing_id: int
+  5. name: string
+  6. emaik: string
+  7. phone: string
+  8. message: text
+  9. contact_date: date
